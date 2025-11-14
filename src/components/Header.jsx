@@ -3,15 +3,15 @@ const Header = ({
   children,
   fonte,
   corFundo,
-  corFonte,
-  preenchimento
+  corTexto,
+  espacamento
 }) => {
 
   const style = `
     ${fonte}
     ${corFundo}
-    ${corFonte}
-    ${preenchimento}
+    ${corTexto}
+    ${espacamento}
   `;
 
   return <header className={style}>{children}</header>;

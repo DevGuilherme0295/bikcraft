@@ -19,8 +19,8 @@ const App = () => {
       <Header
         fonte='font-figtree'
         corFundo='bg-black'
-        corFonte='text-white'
-        preenchimento='px-[12.5rem]'
+        corTexto='text-white'
+        espacamento='px-[12.5rem]'
       >
         <Nav
           altura='h-[6rem]'
@@ -77,7 +77,37 @@ const App = () => {
         </Nav>
       </Header>
       <Main>
-        
+        <Section
+          corFundo='bg-black'
+          altura='h-[37.5rem]'
+          espacamento='px-50'
+          modeloCaixa='flex'
+          corTexto='text-white'
+          >
+          <Box
+            largura='w-[50%]'
+          >
+            <Heading
+              tamanhoFonte='text-[4rem]'
+              pesoFonte='font-bold'
+            >
+              Bicicletas feitas sob medida<Drawer texto='.' corTexto='text-yellow-500'/>
+            </Heading>
+            <Paragraph
+              texto='Bicicletas elétricas de alta precisão e qualidade, 
+              feitas sob medida para você. Explore o mundo na sua velocidade com a Bikcraft.'
+              tamanhoFonte='text-[1.35rem]'
+            />
+            <Button />
+          </Box>
+          <Box
+            largura='w-[50%]'
+          >
+            <Image 
+              fonte='https://www.origamid.com/projetos/bikcraft/img/fotos/introducao.jpg'
+            />
+          </Box>
+        </Section>
       </Main>
     </>
   );

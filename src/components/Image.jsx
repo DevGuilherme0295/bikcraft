@@ -1,13 +1,13 @@
 
-const Image = () => {
+const Image = ({ fonte }) => {
 
   const style = `
-
+    ${fonte}
   `;
 
   return (
     <>
-      <img src="" alt="" />
+      <img src={fonte} alt="" />
     </>
   );
 }

@@ -1,13 +1,13 @@
 
-const Paragraph = () => {
+const Paragraph = ({texto, tamanhoFonte}) => {
 
   const style = `
-
+    ${tamanhoFonte}
   `;
 
   return (
     <>
-      <p></p>
+      <p className={style}>{texto}</p>
     </>
   );
 }

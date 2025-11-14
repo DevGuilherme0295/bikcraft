@@ -1,13 +1,17 @@
 
-const Section = () => {
+const Section = ({ children, corFundo, altura, espacamento, modeloCaixa, corTexto }) => {
 
   const style = `
-
+    ${corFundo}
+    ${altura}
+    ${espacamento}
+    ${modeloCaixa}
+    ${corTexto}
   `;
 
   return (
     <>
-      <section></section>
+      <section className={style}>{children}</section>
     </>
   );
 }

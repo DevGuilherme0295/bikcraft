@@ -1,13 +1,13 @@
 
-const Drawer = () => {
+const Drawer = ({texto, corTexto}) => {
 
   const style = `
-
+    ${corTexto}
   `;
 
   return (
     <>
-      <span></span>
+      <span className={style}>{texto}</span>
     </>
   );
 }

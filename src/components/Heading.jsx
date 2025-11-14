@@ -1,14 +1,13 @@
 
-const Headiing
- = () => {
+const Headiing= ({children, tamanhoFonte, pesoFonte}) => {
 
   const style = `
-
+    ${tamanhoFonte}
   `;
 
   return (
     <>
-      <h1></h1>
+      <h1 className={style}>{children}</h1>
     </>
   );
 }
